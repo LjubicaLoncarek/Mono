@@ -50,18 +50,18 @@ Attachments: Mono/manual-testing/screenshots/bug_2
 
 BUG_3
 
-Title: links for social networks do not work.
-Description:  the links for login via social networks do not work on the login page.
-Severity: Minor 
-Priority: Low
+Title: Links for login through social networks do not work.
+Description: On the Login Page there are 4 buttons under the "Social Login" texta which look like a way to login via social network account but they do not work. 
+Severity: Medium 
+Priority: Medium
 
 Steps to reproduce:
-1. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/main.
-2. I click on login on the menu
-4. I click on any icon for social networks
+1. Go to Login Page: http://demo.baasic.com/angular/starterkit-photo-gallery/login
+2. Click on any of the 4 buttons under "Social Login" text. 
+3. Observe that it is not possible to login using this buttons and message "undefined: Social login configuration not found." is displayed. 
 
-Expected result: that clicking on a certain icon will take me to a certain social network 
-Actual result: clicking on the icons nothing happens "undefined: Social login configuration not found"
+Expected result: Clicking on a certain icon will open an interface to login into the application using a certain social network login details. 
+Actual result: Clicking on the icons displays an error: "undefined: Social login configuration not found". 
 Environment: Windows 11, Android version 16
 Attachments: Mono/manual-testing/screenshots/bug_3
 
