@@ -57,19 +57,81 @@ Severity: Minor
 Priority: Low
 
 Steps to reproduce:
-1. Log into the application with an existing user.
-2. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/album/create
-4. I scroll the homepage to the bottom Copyright @ Blog name
-5. On the left, I click on link the Blog name 
+1. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/main.
+2. I click on login on the menu
+4. I click on any icon for social networks
 
-Expected result: that clicking on the link will take me to a specific page 
-Actual result: clicking on Blog name nothing happens
+Expected result: that clicking on a certain icon will take me to a certain social network 
+Actual result: clicking on the icons nothing happens "undefined: Social login configuration not found"
 Environment: Windows 11, Android version 16
-Attachments: Mono/manual-testing/screenshots/bug_2
+Attachments: Mono/manual-testing/screenshots/bug_3
 
 -------------------------------
 -------------------------------
 
+BUG_4
+
+Title: Unable to create a new password.
+Description: On the login page, I clicked the option for a forgotten password and initiated the recovery process. I received an email with a password, but when I clicked the link—expecting to change my password—an error occurred.
+Severity: Critical
+Priority: High
+
+Steps to reproduce:
+1. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/main
+4. Click "Login" in the menu
+5. Click "Forgot Your Password? Recover Your Password Here!"
+6. Click on "Enter the recovery email"
+7. Type into emil "Enter your email" textbox
+8. Click on "Recover password".
+9. Check email "Please check email in order to finish password recovery process".
+10. into the email click "Set new password"
+
+Expected result: Your password reset request was successful. To set your new password please follow the link below – ability to create a new password. 
+Actual result: HTTP Error 404.0 – Not Found
+Environment: Windows 11, Android version 16
+Attachments: Mono/manual-testing/screenshots/bug_4
+
+-------------------------------
+-------------------------------
+
+BUG_5
+
+Title: Icon below the text "We are celebrating the vastness of life" on the home page is not working.
+Description: Scrolling down on the home page is not working. It displays some images and then resets.
+Severity: Minor 
+Priority: Low
+
+Steps to reproduce:
+1. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/main
+4. Scroll to the bottom of the home page.
+5. Below the text "We are celebrating the vastness of life," there is an icon pointing downwards.
+
+Expected result: Clicking the icon should reveal more text or images.. 
+Actual result: It briefly displays some images and then quickly resets itself.
+Environment: Windows 11, Android version 16
+Attachments: Mono/manual-testing/screenshots/bug_5
+
+-------------------------------
+-------------------------------
+
+BUG_6
+
+Title: Search function not working optimally.
+Description: The search function on the home page returns images that do not match the search term; for example, if "aaa" is entered and one scrolls down slightly, an image of a soccer ball appears that does not contain "aaa" in its name or description.
+Severity: Critical
+Priority: High
+
+Steps to reproduce:
+1. Go to link://demo.baasic.com/angular/starterkit-photo-gallery/main
+4. Locate the search bar on the home page.
+
+Expected result: When a term like "aaa" is entered, the search should return items containing the sequence "aaa".
+Actual result: It returns images containing the sequence "aaa" as well as images that do not contain the sequence "aaa"..
+Environment: Windows 11, Android version 16
+Attachments: Mono/manual-testing/screenshots/bug_6.1/screenshots/bug_6.2
+
+-------------------------------
+-------------------------------
 
 
 
