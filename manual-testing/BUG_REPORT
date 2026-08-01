@@ -7,7 +7,7 @@ Priority: High
 
 Steps to reproduce:
 1. Log into the application with an existing user.
-2. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/album/create
+2. Go to the page: http://demo.baasic.com/angular/starterkit-photo-gallery/album/create
 4. Type into "Album Name" textbox: Summer094129041
 5. Type into "Description" textbox: Summer094129041
 6. CLick on button: "SAVE ALBUM"
@@ -30,19 +30,18 @@ Attachments: Mono/manual-testing/screenshots/bug_1
 
 BUG_2
 
-Title: link Copyright @ Blog name dont work.
-Description:  I clicked on the green text on the page that looks like a link where it says Copyright @ Blog name.
+Title: "Copyright @ Blog name" link does not work. 
+Description:  I clicked on the green text on the "Copyright @ Blog name", on the Home page that looks like a link, but it does not do anything. 
 Severity: Minor 
 Priority: Low
 
 Steps to reproduce:
-1. Log into the application with an existing user.
-2. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/album/create
-4. I scroll the homepage to the bottom Copyright @ Blog name
-5. On the left, I click on link the Blog name 
+1. Go to the Home Page: http://demo.baasic.com/angular/starterkit-photo-gallery/main
+2. Scroll down until "Copyright @ Blog name" is visible in the bottom left corner.
+4. Click on the "Copyright @ Blog name" and observe that nothing is happening.
 
-Expected result: that clicking on the link will take me to a specific page 
-Actual result: clicking on Blog name nothing happens
+Expected result: Clicking on the link takes me to a specific page. 
+Actual result: Clicking on the "Blog name" does not do anything. 
 Environment: Windows 11, Android version 16
 Attachments: Mono/manual-testing/screenshots/bug_2
 
