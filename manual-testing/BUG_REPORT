@@ -7,23 +7,23 @@ Priority: High
 
 Steps to reproduce:
 1. Log into the application with an existing user.
-2. Go to the page: http://demo.baasic.com/angular/starterkit-photo-gallery/album/create
-4. Type into "Album Name" textbox: Summer094129041
-5. Type into "Description" textbox: Summer094129041
-6. CLick on button: "SAVE ALBUM"
-7. Click on "Click to upload Cover Image"
-8. Type into "Photo Name" textbox: Summer094129041
-9. Type into "Description" textbox: Summer094129041
-10. Click on "Upload Image"
-11. Select an image stored on your device. 
-12. Click on "UPLOAD" button. 
-13. Wait for the application to process the request, this can take about half a minute. 
-14. Find the error under "Photo Name" text box: "Name taken, please choose another."
+2. Go to the page: "http://demo.baasic.com/angular/starterkit-photo-gallery/album/create". 
+3. Type into "Album Name" textbox: Summer094129041
+4. Type into "Description" textbox: Summer094129041
+5. CLick on button: "SAVE ALBUM"
+6. Click on "Click to upload Cover Image"
+7. Type into "Photo Name" textbox: Summer094129041
+8. Type into "Description" textbox: Summer094129041
+9. Click on "Upload Image"
+10. Select an image stored on your device. 
+11. Click on "UPLOAD" button. 
+12. Wait for the application to process the request, this can take about half a minute. 
+13. Find the error under "Photo Name" text box: "Name taken, please choose another."
 
 Expected result: Album Cover Image sucessfuly uploaded. 
 Actual result: Upload failed with an error message, "Name taken, please choose another."
 Environment: Windows 11, Android version 16
-Attachments: Mono/manual-testing/screenshots/bug_1
+Attachments: "Mono/manual-testing/screenshots/bug_1"
 
 -------------------------------
 -------------------------------
@@ -38,12 +38,12 @@ Priority: Low
 Steps to reproduce:
 1. Go to the Home Page: http://demo.baasic.com/angular/starterkit-photo-gallery/main
 2. Scroll down until "Copyright @ Blog name" is visible in the bottom left corner.
-4. Click on the "Copyright @ Blog name" and observe that nothing is happening.
+3. Click on the "Copyright @ Blog name" and observe that nothing is happening.
 
 Expected result: Clicking on the link takes me to a specific page. 
 Actual result: Clicking on the "Blog name" does not do anything. 
 Environment: Windows 11, Android version 16
-Attachments: Mono/manual-testing/screenshots/bug_2
+Attachments: "Mono/manual-testing/screenshots/bug_2"
 
 -------------------------------
 -------------------------------
@@ -56,14 +56,14 @@ Severity: Medium
 Priority: Medium
 
 Steps to reproduce:
-1. Go to Login Page: http://demo.baasic.com/angular/starterkit-photo-gallery/login
+1. Go to Login Page: "http://demo.baasic.com/angular/starterkit-photo-gallery/login".
 2. Click on any of the 4 buttons under "Social Login" text. 
 3. Observe that it is not possible to login using this buttons and message "undefined: Social login configuration not found." is displayed. 
 
 Expected result: Clicking on a certain icon will open an interface to login into the application using a certain social network login details. 
 Actual result: Clicking on the icons displays an error: "undefined: Social login configuration not found". 
 Environment: Windows 11, Android version 16
-Attachments: Mono/manual-testing/screenshots/bug_3
+Attachments: "Mono/manual-testing/screenshots/bug_3"
 
 -------------------------------
 -------------------------------
@@ -77,18 +77,18 @@ Severity: Critical
 Priority: High
 
 Steps to reproduce:
-1. Go to login page: http://demo.baasic.com/angular/starterkit-photo-gallery/login
+1. Go to login page: "http://demo.baasic.com/angular/starterkit-photo-gallery/login".
 2. Click on the text bellow the Login boxes: "Forgot Your Password? Recover Your Password Here!"
-6. Enter your email into the "Email" Text Box. 
-8. Click on "RECOVER PASSWORD".
-9. Go to your email inbox and locate the message sent by the application and open it. 
-10. In the email click on the "Set new password" link. 
-11. Observe that the link shows an error instead of a password reset page. 
+3. Enter your email into the "Email" Text Box. 
+4. Click on "RECOVER PASSWORD".
+5. Go to your email inbox and locate the message sent by the application and open it. 
+6. In the email click on the "Set new password" link. 
+7. Observe that the link shows an error instead of a password reset page. 
 
 Expected result: Clicking on the "Set new password" openas a page where it is possible to enter a new password. 
 Actual result: Link opens an error page: "HTTP Error 404.0 – Not Found"
 Environment: Windows 11, Android version 16
-Attachments: Mono/manual-testing/screenshots/bug_4
+Attachments: "Mono/manual-testing/screenshots/bug_4"
 
 -------------------------------
 -------------------------------
@@ -102,33 +102,37 @@ Severity: High
 Priority: High
 
 Steps to reproduce:
-1. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/main
-4. Scroll to the bottom of the home page.
-5. Below the text "We are celebrating the vastness of life," there is an icon pointing downwards.
+1. Go to home page: "http://demo.baasic.com/angular/starterkit-photo-gallery/main".
+2. Scroll to the bottom of the home page until the mouse looking icon is visible. 
+3. Try clicking on the icon and scrolling the mouse.
+4. Notice that there are some photos that briefly apear and disapear again. 
 
-Expected result: Clicking the icon should reveal more text or images.. 
+Expected result: Clicking the icon or scrolling should show the image library which can be scrolled through and examined. 
 Actual result: It briefly displays some images and then quickly resets itself.
 Environment: Windows 11, Android version 16
-Attachments: Mono/manual-testing/screenshots/bug_5
+Attachments: "Mono/manual-testing/screenshots/bug_5"
 
 -------------------------------
 -------------------------------
 
 BUG_6
 
-Title: Search function not working optimally.
-Description: The search function on the home page returns images that do not match the search term; for example, if "aaa" is entered and one scrolls down slightly, an image of a soccer ball appears that does not contain "aaa" in its name or description.
+Title: Search function returning inconsistent results.
+Description: The search function on the home page returns images that do not match the search term. 
+For example, if "aaa" is entered and one scrolls down slightly, an image of a soccer ball appears that does not contain "aaa" in its name or description.
 Severity: Critical
 Priority: High
 
 Steps to reproduce:
-1. Go to link://demo.baasic.com/angular/starterkit-photo-gallery/main
-4. Locate the search bar on the home page.
+1. Go to home page: "http://demo.baasic.com/angular/starterkit-photo-gallery/main".
+4. Locate and click on the search bar on the top right part of the home page.
+3. Enter "aaa" into the search box and click enter. 
+4. Find an image which does not contain "aaa" in its name or description. For example the soccer ball image "soccervfootballzz" of user "TesT1323" ( see attached screenshot ). 
 
-Expected result: When a term like "aaa" is entered, the search should return items containing the sequence "aaa".
-Actual result: It returns images containing the sequence "aaa" as well as images that do not contain the sequence "aaa"..
+Expected result: When a term like "aaa" is entered, the search should return only results containing the search term "aaa".
+Actual result: It returns images containing the sequence "aaa" as well as images that do not contain the sequence "aaa".
 Environment: Windows 11, Android version 16
-Attachments: Mono/manual-testing/screenshots/bug_6.1/screenshots/bug_6.2
+Attachments: "Mono/manual-testing/screenshots/bug_6.1", "Mono/manual-testing/screenshots/bug_6.2"
 
 -------------------------------
 -------------------------------
