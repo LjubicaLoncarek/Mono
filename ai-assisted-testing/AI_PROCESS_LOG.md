@@ -1076,3 +1076,197 @@ Overall, I'd rate your current bug report around 8.5–9/10 for a QA take-home a
 
 -------------------------------------------------
 -------------------------------------------------
+User prompt 5: 
+
+You skipped the comments on BUG 4 can you please check the bug report again and comment on that bug as well.
+
+-------------------------------------------------
+-------------------------------------------------
+ChatGPT answer 5: 
+
+Good catch—I did skip BUG 4. I reread all of your reports, and here are my comments on each one, including BUG 4.
+
+BUG 1 – Failed to upload the background image for the new album
+
+Rating: ⭐⭐⭐⭐⭐ (Excellent)
+
+This is your strongest bug.
+
+What's good
+Clear reproduction steps.
+Uses unique album names to rule out duplicate data.
+High business impact.
+Easy to reproduce.
+Good severity (Critical) and priority (High).
+Suggestions
+
+I'd slightly improve the title:
+
+Unable to upload album cover image due to false "Name taken" validation
+
+This immediately tells the developer why the upload fails.
+
+Also note whether:
+
+the album itself is created successfully;
+refreshing the page changes anything;
+the upload request returns HTTP 409/400/500 (if checked in Network).
+BUG 2 – Copyright link
+
+Rating: ⭐⭐⭐☆☆
+
+This is okay, but I'd verify one thing.
+
+If "Blog name" is merely placeholder/demo text and not intended to navigate anywhere, it may not actually be a bug.
+
+I'd inspect it.
+
+If it's an <a> tag with no destination, your report is valid.
+
+If it's just styled text, I'd either:
+
+lower the confidence,
+or omit it unless you're certain it's intended to be clickable.
+BUG 3 – Social login
+
+Rating: ⭐⭐⭐⭐☆
+
+Nice bug.
+
+The UI exposes a feature that immediately throws
+
+"Social login configuration not found."
+
+That's definitely worth reporting.
+
+Minor improvements:
+
+Mention whether all four providers behave identically.
+
+For example:
+
+All four social login buttons produce the same error.
+
+That saves developers time.
+
+BUG 4 – Password reset link opens 404
+
+Rating: ⭐⭐⭐⭐⭐ (Excellent)
+
+This is another strong bug.
+
+A broken password reset flow is a critical issue because it prevents users from recovering access to their accounts.
+
+I agree with:
+
+Severity: Critical
+Priority: High
+Things I like
+
+✔ Reproduction is realistic.
+
+✔ You verified that:
+
+email is sent,
+email arrives,
+link exists,
+only the reset page fails.
+
+That narrows the problem considerably.
+
+Improvements
+
+I'd slightly improve the title.
+
+Current:
+
+Unable to reset the new password through email password reset link.
+
+Suggested:
+
+Password reset link in recovery email returns HTTP 404
+
+or
+
+Password recovery email contains broken reset link
+
+These tell the developer exactly where the defect is.
+
+I'd also slightly improve the expected result.
+
+Current:
+
+Clicking on the "Set new password" openas a page where it is possible to enter a new password.
+
+Better:
+
+Clicking the password reset link should open the password reset page, allowing the user to enter and confirm a new password.
+
+Another thing I'd add:
+
+Include the exact URL (or at least the route) that opens after clicking the email link, if possible.
+
+Developers love that information.
+
+For example:
+
+https://...
+
+or
+
+/password/reset/...
+
+This can immediately reveal whether the email template contains an incorrect path.
+
+Finally, if you checked the browser's Network tab, mentioning that the request returns HTTP 404 (instead of only the browser error page) would make the report even stronger.
+
+BUG 5 – Scroll icon
+
+Rating: ⭐⭐⭐☆☆
+
+This is the report I'm least confident about.
+
+I'd verify:
+
+another browser
+another PC
+Incognito mode
+
+It's possible this is an animation timing issue.
+
+If reproducible everywhere, it's a good bug.
+
+If not, I'd be cautious.
+
+BUG 6 – Search
+
+Rating: ⭐⭐⭐⭐☆
+
+Very interesting bug.
+
+Before reporting it as a search bug I'd verify whether search matches
+
+username
+tags
+hidden metadata
+album name
+
+If none of those contain
+
+aaa
+
+then this becomes an excellent bug.
+
+Overall assessment
+
+Here's how I'd rate each report from a hiring perspective:
+
+Bug	Rating	Notes
+BUG 1	⭐⭐⭐⭐⭐	Excellent functional bug with clear business impact.
+BUG 2	⭐⭐⭐☆☆	Verify intended behavior before keeping it.
+BUG 3	⭐⭐⭐⭐☆	Good defect; mention that all providers fail the same way.
+BUG 4	⭐⭐⭐⭐⭐	Strong authentication/recovery defect. Improve the title and include the reset URL or HTTP response if possible.
+BUG 5	⭐⭐⭐☆☆	Worth reporting only after confirming it's consistently reproducible.
+BUG 6	⭐⭐⭐⭐☆	Strong bug if you've ruled out matches in hidden fields such as tags or usernames.
+
+Overall, I'd say this is a solid QA assignment submission. If you add a couple more edge-case bugs (for example, around album creation or file upload) and strengthen BUG 4 with the reset URL or HTTP status, your bug report would likely be viewed as professional and thorough.
