@@ -30,29 +30,46 @@ Attachments: Mono/manual-testing/screenshots/bug_1
 
 BUG_2
 
-Title: Failed to upload the background image for the new album.
-Description: I tried to create a new album, but when uploading the background image, I couldn't save it because the app kept telling me the name was already taken, no matter which name I chose.
-Severity: Critical
-Priority: High
+Title: link Copyright @ Blog name dont work.
+Description:  I clicked on the green text on the page that looks like a link where it says Copyright @ Blog name.
+Severity: Minor 
+Priority: Low
 
 Steps to reproduce:
 1. Log into the application with an existing user.
 2. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/album/create
-4. Type into "Album Name" textbox: Summer094129041
-5. Type into "Description" textbox: Summer094129041
-6. CLick on button: "SAVE ALBUM"
-7. Click on "Click to upload Cover Image"
-8. Type into "Photo Name" textbox: Summer094129041
-9. Type into "Description" textbox: Summer094129041
-10. Click on "Upload Image"
-11. Select an image stored on your device. 
-12. Click on "UPLOAD" button. 
-13. Wait for the application to process the request, this can take about half a minute. 
-14. Find the error under "Photo Name" text box: "Name taken, please choose another."
+4. I scroll the homepage to the bottom Copyright @ Blog name
+5. On the left, I click on link the Blog name 
 
-Expected result: Album Cover Image sucessfuly uploaded. 
-Actual result: Upload failed with an error message, "Name taken, please choose another."
+Expected result: that clicking on the link will take me to a specific page 
+Actual result: clicking on Blog name nothing happens
 Environment: Windows 11, Android version 16
-Attachments: Mono/manual-testing/screenshots/bug_1
+Attachments: Mono/manual-testing/screenshots/bug_2
+
+-------------------------------
+-------------------------------
+
+BUG_3
+
+Title: links for social networks do not work.
+Description:  the links for login via social networks do not work on the login page.
+Severity: Minor 
+Priority: Low
+
+Steps to reproduce:
+1. Log into the application with an existing user.
+2. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/album/create
+4. I scroll the homepage to the bottom Copyright @ Blog name
+5. On the left, I click on link the Blog name 
+
+Expected result: that clicking on the link will take me to a specific page 
+Actual result: clicking on Blog name nothing happens
+Environment: Windows 11, Android version 16
+Attachments: Mono/manual-testing/screenshots/bug_2
+
+-------------------------------
+-------------------------------
+
+
 
 
