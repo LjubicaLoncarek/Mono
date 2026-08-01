@@ -70,23 +70,23 @@ Attachments: Mono/manual-testing/screenshots/bug_3
 
 BUG_4
 
-Title: Unable to create a new password.
-Description: On the login page, I clicked the option for a forgotten password and initiated the recovery process. I received an email with a password, but when I clicked the link—expecting to change my password—an error occurred.
+Title: Unable to reset the new password through email password reset link. 
+Description: On the login page, I clicked the option for a forgotten password and initiated the recovery process. 
+I received an email with a reset link, but when I clicked the link i got an error instead of a way to reset the password. 
 Severity: Critical
 Priority: High
 
 Steps to reproduce:
-1. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/main
-4. Click "Login" in the menu
-5. Click "Forgot Your Password? Recover Your Password Here!"
-6. Click on "Enter the recovery email"
-7. Type into emil "Enter your email" textbox
-8. Click on "Recover password".
-9. Check email "Please check email in order to finish password recovery process".
-10. into the email click "Set new password"
+1. Go to login page: http://demo.baasic.com/angular/starterkit-photo-gallery/login
+2. Click on the text bellow the Login boxes: "Forgot Your Password? Recover Your Password Here!"
+6. Enter your email into the "Email" Text Box. 
+8. Click on "RECOVER PASSWORD".
+9. Go to your email inbox and locate the message sent by the application and open it. 
+10. In the email click on the "Set new password" link. 
+11. Observe that the link shows an error instead of a password reset page. 
 
-Expected result: Your password reset request was successful. To set your new password please follow the link below – ability to create a new password. 
-Actual result: HTTP Error 404.0 – Not Found
+Expected result: Clicking on the "Set new password" openas a page where it is possible to enter a new password. 
+Actual result: Link opens an error page: "HTTP Error 404.0 – Not Found"
 Environment: Windows 11, Android version 16
 Attachments: Mono/manual-testing/screenshots/bug_4
 
@@ -96,9 +96,10 @@ Attachments: Mono/manual-testing/screenshots/bug_4
 BUG_5
 
 Title: Icon below the text "We are celebrating the vastness of life" on the home page is not working.
-Description: Scrolling down on the home page is not working. It displays some images and then resets.
-Severity: Minor 
-Priority: Low
+Description: There is an icon at the bottom of the text that looks like it needs to be clicked on 
+or mouse needs to be scrolled but when this is done some photos partially apear and then disapear instead. 
+Severity: High 
+Priority: High
 
 Steps to reproduce:
 1. Go to link: http://demo.baasic.com/angular/starterkit-photo-gallery/main
