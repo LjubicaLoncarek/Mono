@@ -24,8 +24,9 @@ Attachments: "Mono/manual-testing/screenshots/[AI-assisted]_bug_1"
 [AI-assisted]
 BUG_2
 
-Title: 
-Description: Failed to upload the background image for the new album.. 
+Title: To long processing time for uploading an album background image. 
+Description: When creating a new album the application asks for a background photo. When a jpeg image is selected it takes about half a minute to process
+the upload request which seams way to long for such a task. 
 Severity: Critical
 Priority: High
 
@@ -41,8 +42,7 @@ Steps to reproduce:
 9. Click on "Upload Image"
 10. Select an image stored on your device. 
 11. Click on "UPLOAD" button. 
-12. Wait for the application to process the request, this can take about half a minute. 
-13. Find the error under "Photo Name" text box: "Name taken, please choose another."
+12. Observe a long wait time of about half a minute for the image to be processed by the application. 
 
 Expected result: Takes at most a second or 2 for application to upload a jpeg file as a cover photo for a new album.. 
 Actual result: Takes about half a minute for the application to upload a jpeg file as a cover photo for a new album. 
