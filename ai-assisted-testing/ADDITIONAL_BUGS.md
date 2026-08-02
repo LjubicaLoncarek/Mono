@@ -79,19 +79,22 @@ Attachments: "Mono/manual-testing/screenshots/[AI-assisted]_bug_3"
 BUG_4
 
 Title: Registering with a new user says the username is already taken. 
-Description: I tried registering with a different usernam and email and the application told me that the username is already taken which is unlikely. 
+Description: I tried registering with a different username and email and the application told me that the username is already taken which is very unlikely
+considering the complexity of the username that i used. 
 Severity: Medium
 Priority: Medium
 
 Steps to reproduce:
 1. Go to registration page: "http://demo.baasic.com/angular/starterkit-photo-gallery/register".
-2. Enter a corect email with a long name which is unlikely to be taken: UnlikelytoBeTakenLongNumber12425125124@gmail.com
-3. Enter a correct name with a long name which is unlikely to be taken: UnlikelytoBeTakenLongNumber12425125124
-4. Enter a password.
-5. Click on register. 
+2. Enter a corect email with a long name which is unlikely to be taken into the "Email" field: UnlikelytoBeTakenLongNumber12425125124@gmail.com
+3. Enter a correct name with a long name which is unlikely to be taken into the "Username" field : UnlikelytoBeTakenLongNumber12425125124
+4. Enter a password into the "Password" field: 1234567
+5. Enter a password into the "Confirm Password" field: 1234567
+6. Click on the "REGISTER" button
+7. Observe the likely wrong "Username taken!" message above the "REGISTER" button. 
 
-Expected result: Clicking on the "Set new password" openas a page where it is possible to enter a new password. 
-Actual result: Link opens an error page: "HTTP Error 404.0 – Not Found"
+Expected result: Clicking on the REGISTER button sends a registration email to the provided email and informs the user of the registration sucess. 
+Actual result: Application displays a "Username taken!" message above the "REGISTER" button. 
 Environment: Windows 11, Android version 16
 Attachments: "Mono/manual-testing/screenshots/[AI-assisted]_bug_4"
 
