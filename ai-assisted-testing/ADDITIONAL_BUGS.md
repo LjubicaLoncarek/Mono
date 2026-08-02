@@ -52,5 +52,48 @@ Attachments: "Mono/manual-testing/screenshots/[AI-assisted]_bug_2"
 -------------------------------
 -------------------------------
 
+[AI-assisted]
+BUG_3
+
+Title: Not enough information about password rule. 
+Description: When registering a new user and entering a password which is to short, the application does not tell you how long the password needs to be. 
+Severity: Medium
+Priority: Medium
+
+Steps to reproduce:
+1. Go to registration page: "http://demo.baasic.com/angular/starterkit-photo-gallery/register".
+2. Enter your email into the "Email" Text Box. 
+3. Enter your username.
+4. Enter you password
+ 
+
+Expected result: Password to short, it needs to have at least 7 characters. 
+Actual result: Password to short.
+Environment: Windows 11, Android version 16
+Attachments: "Mono/manual-testing/screenshots/[AI-assisted]_bug_3"
+
+-------------------------------
+-------------------------------
+
+[AI-assisted]
+BUG_4
+
+Title: Registering with a new user says the username is already taken. 
+Description: I tried registering with a different usernam and email and the application told me that the username is already taken which is unlikely. 
+Severity: Medium
+Priority: Medium
+
+Steps to reproduce:
+1. Go to registration page: "http://demo.baasic.com/angular/starterkit-photo-gallery/register".
+2. Enter a corect email with a long name which is unlikely to be taken: UnlikelytoBeTakenLongNumber12425125124@gmail.com
+3. Enter a correct name with a long name which is unlikely to be taken: UnlikelytoBeTakenLongNumber12425125124
+4. Enter a password.
+5. Click on register. 
+
+Expected result: Clicking on the "Set new password" openas a page where it is possible to enter a new password. 
+Actual result: Link opens an error page: "HTTP Error 404.0 – Not Found"
+Environment: Windows 11, Android version 16
+Attachments: "Mono/manual-testing/screenshots/[AI-assisted]_bug_4"
+
 -------------------------------
 -------------------------------
