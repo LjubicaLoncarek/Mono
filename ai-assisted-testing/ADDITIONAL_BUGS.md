@@ -86,14 +86,14 @@ Priority: Medium
 
 Steps to reproduce:
 1. Go to registration page: "http://demo.baasic.com/angular/starterkit-photo-gallery/register".
-2. Enter a corect email with a long name which is unlikely to be taken into the "Email" field: UnlikelytoBeTakenLongNumber12425125124@gmail.com
+2. Enter a correct email with a long name which is unlikely to be taken into the "Email" field: UnlikelytoBeTakenLongNumber12425125124@gmail.com
 3. Enter a correct name with a long name which is unlikely to be taken into the "Username" field : UnlikelytoBeTakenLongNumber12425125124
 4. Enter a password into the "Password" field: 1234567
 5. Enter a password into the "Confirm Password" field: 1234567
 6. Click on the "REGISTER" button
 7. Observe the likely wrong "Username taken!" message above the "REGISTER" button. 
 
-Expected result: Clicking on the REGISTER button sends a registration email to the provided email and informs the user of the registration sucess. 
+Expected result: Clicking on the REGISTER button sends a registration email to the provided email and informs the user of the registration success. 
 Actual result: Application displays a "Username taken!" message above the "REGISTER" button. 
 Environment: Windows 11, Android version 16
 Attachments: "Mono/manual-testing/screenshots/[AI-assisted]_bug_4"
