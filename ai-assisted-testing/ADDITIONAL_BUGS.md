@@ -1,4 +1,5 @@
-[AI-assisted]_BUG_1
+[AI-assisted]
+BUG_1
 
 Title: Failed to upload the background image for the new album.
 Description: I tried to create a new album, but when uploading the background image, I couldn't save it because the app kept telling me the name was already taken, no matter which name I chose.
