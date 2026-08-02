@@ -55,16 +55,17 @@ Attachments: "Mono/manual-testing/screenshots/[AI-assisted]_bug_2"
 [AI-assisted]
 BUG_3
 
-Title: Not enough information about password rule. 
+Title: Not enough information about the password rule. 
 Description: When registering a new user and entering a password which is to short, the application does not tell you how long the password needs to be. 
 Severity: Medium
 Priority: Medium
 
 Steps to reproduce:
 1. Go to registration page: "http://demo.baasic.com/angular/starterkit-photo-gallery/register".
-2. Enter your email into the "Email" Text Box. 
-3. Enter your username.
-4. Enter you password
+2. Enter a password into the "Password" field: 12345
+3. Enter a password into the "Confirm Password" field: 12345
+4. Click outside of the password field.
+5. Observe that application reports a "Password too short." message but does not say how long it should be. 
  
 Expected result: Password to short, it needs to have at least 7 characters. 
 Actual result: Password to short.
